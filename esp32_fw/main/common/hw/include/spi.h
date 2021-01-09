@@ -8,6 +8,10 @@
 #ifndef SRC_COMMON_HW_INCLUDE_SPI_H_
 #define SRC_COMMON_HW_INCLUDE_SPI_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "hw_def.h"
 
 #ifdef _USE_HW_SPI
@@ -36,6 +40,10 @@ bool spiDmaTxIsDone(uint8_t ch);
 void spiAttachTxInterrupt(uint8_t ch, void (*func)());
 
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* SRC_COMMON_HW_INCLUDE_SPI_H_ */

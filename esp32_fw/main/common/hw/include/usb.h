@@ -8,6 +8,9 @@
 #ifndef SRC_COMMON_HW_INCLUDE_USB_H_
 #define SRC_COMMON_HW_INCLUDE_USB_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "hw_def.h"
 
@@ -32,6 +35,10 @@ void usbDeInit(void);
 UsbMode usbGetMode(void);
 
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* SRC_COMMON_HW_INCLUDE_USB_H_ */

@@ -8,6 +8,9 @@
 #ifndef SRC_COMMON_HW_INCLUDE_LCD_H_
 #define SRC_COMMON_HW_INCLUDE_LCD_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "hw_def.h"
 
@@ -122,5 +125,8 @@ LcdFont lcdGetFont(void);
 
 #endif /* _USE_HW_LCD */
 
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* SRC_COMMON_HW_INCLUDE_LCD_H_ */

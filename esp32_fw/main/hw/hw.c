@@ -17,4 +17,7 @@
 void hwInit(void)
 {
   bspInit();
+
+  cliInit();
+  uartInit();
 }

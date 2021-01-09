@@ -6,6 +6,8 @@ SRCS "bsp/bsp.c"
 SRCS "common/core/qbuffer.c"
 SRCS "hw/hw.c"
 SRCS "hw/driver/uart.c"
+SRCS "hw/driver/cli.c"
+
 
 INCLUDE_DIRS ""
 INCLUDE_DIRS "ap"

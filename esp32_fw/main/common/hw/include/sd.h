@@ -8,6 +8,10 @@
 #ifndef SRC_COMMON_HW_INCLUDE_SD_H_
 #define SRC_COMMON_HW_INCLUDE_SD_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "hw_def.h"
 
 #ifdef _USE_HW_SD
@@ -41,6 +45,10 @@ bool sdWriteBlocks(uint32_t block_addr, uint8_t *p_data, uint32_t num_of_blocks,
 bool sdEraseBlocks(uint32_t start_addr, uint32_t end_addr);
 
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* SRC_COMMON_HW_INCLUDE_SD_H_ */

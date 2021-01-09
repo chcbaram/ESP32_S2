@@ -8,6 +8,9 @@
 #ifndef SRC_COMMON_HW_INCLUDE_MCP2515_H_
 #define SRC_COMMON_HW_INCLUDE_MCP2515_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #include "hw_def.h"
 
@@ -105,6 +108,10 @@ McpBaud mcp2515GetBaud(void);
 uint8_t mcp2515ReadStatus(void);
 uint8_t mcp2515ReadErrorFlags(void);
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* SRC_COMMON_HW_INCLUDE_MCP2515_H_ */

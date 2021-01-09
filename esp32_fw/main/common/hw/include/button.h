@@ -8,6 +8,10 @@
 #ifndef SRC_COMMON_HW_INCLUDE_BUTTON_H_
 #define SRC_COMMON_HW_INCLUDE_BUTTON_H_
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include "hw_def.h"
 
 
@@ -20,6 +24,10 @@ bool buttonInit(void);
 bool buttonGetPressed(uint8_t ch);
 
 
+#endif
+
+#ifdef __cplusplus
+}
 #endif
 
 #endif /* SRC_COMMON_HW_INCLUDE_BUTTON_H_ */
